@@ -1,0 +1,8 @@
+Summary:
+Custom implementation of the cut Unix command
+cut - cuts out the selected portions from each line in a file
+
+Lessons:
+1. Use locale to get encoding type with reading files
+2. New code pattern: use hashmap to process command-line options
+

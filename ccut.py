@@ -6,6 +6,7 @@ import locale
 local_encoding = locale.getpreferredencoding()
 default_delimeter = "\t"
 
+
 def get_options_dict():
     """
     Assembles all options after ccut command into a dictionary
@@ -43,6 +44,7 @@ def check_incorrect_options(options_dict):
         sys.exit(1)
     if "-f" not in options_dict:
         print("ccut: -f missing")
+        sys.exit(1)
 
 
 def process_fields(text, fields, delimiter):
