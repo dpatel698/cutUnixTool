@@ -29,6 +29,7 @@ This project is a custom implementation of the Unix `cut` command-line tool. It 
 # Usage
 The ccut tool can be used to extract fields from text files or standard input. Below are some example usages:
 1. Extract the second field from a tab-separated file:
+
     ```bash
     ./ccut.py -f2 sample.tsv
     ```
