@@ -31,19 +31,19 @@ The ccut tool can be used to extract fields from text files or standard input. B
 1. Extract the second field from a tab-separated file:
 
     ```bash
-    ./ccut.py -f2 sample.tsv
+    ./ccut.py -f2 test/sample.tsv
     ```
 2. Use a comma as the delimiter and extract the first field:
     ```bash
-    ./ccut.py -f1 -d, fourchords.csv
+    ./ccut.py -f1 -d, test/fourchords.csv
     ```
 3. Extract multiple fields (e.g., fields 1 and 2):
     ```bash
-    ./ccut.py -f1,2 sample.tsv
+    ./ccut.py -f1,2 test/sample.tsv
     ```
 4. Use standard input:
     ```bash
-    tail -n5 fourchords.csv | ./ccut.py -d, -f"1 2"
+    tail -n5 test/fourchords.csv | ./ccut.py -d, -f"1 2"
     ```
 
 # Implementation Details
